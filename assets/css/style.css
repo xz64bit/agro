@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
+	background: #afafaf;
 }
 
 *,
@@ -18,15 +19,21 @@ h6 {
 	margin: 0;
 }
 
+/*===============================  ОБНУЛЕНИЕ  =========================================*/
+
+/*===============================  МЕНЮ И БУРГУР НАЧАЛО ==========================================*/
+
+
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1920px;
-	background: #f7fdfb url("") top no-repeat;
+	background: #a0a0a0;
 }
 
 .container {
 	width: 100%;
-	max-width: 95%;
+	max-width: 1170px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -36,51 +43,45 @@ h6 {
 	top: 0;
 	left: 0;
 	z-index: 50;
-	margin-top: 0;
 	position: fixed;
-	margin-bottom: 200px;
+	background-color: rgba(240, 240, 240, 0.55);
 }
 
 .header.fixed {
-	background-color: rgba(240, 240, 240, 0.95);
-	padding-top: 0;
-	padding-bottom: 0;
+	background-color: rgba(240, 240, 240, 0.85);
+	padding-bottom: 15px;
 	margin-top: 0;
 }
 
 .header:before {
 	content: "";
-	position: absolute;
+	position: top;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(240, 240, 240, 0.8);
+	background-color: transparent;
 	z-index: 0;
 }
 
 .header__body {
 	display: flex;
-	/* ====justify-content: space-between;=========*/
+	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	height: 84px;
 	position: relative;
-	margin-left: 10%;
 }
 
 .header__logo {
-	margin-right: 150px;
-	margin-left: 50px;
-	width: 100px;
-	/* =======height: 40px;
-	/* ========background-color: ;-================*/
+	flex: 0 0 84px;
 	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
 	z-index: 3;
 }
 
 .header__logo img {
-	width: 100%;
-	display: block;
+	max-width: 100%;
 }
 
 .header__burger {
@@ -88,7 +89,6 @@ h6 {
 }
 
 .header__list {
-	margin-left: 100px;
 	display: flex;
 	align-items: center;
 }
@@ -98,18 +98,17 @@ h6 {
 }
 
 .header__button {
-	white-space: nowrap;
-	padding: 9px 20px;
 	display: inline-block;
-	width: 100%;
-	background-color: #005092;
-	border-radius: 2px;
+	margin-left: 45px;
+	width: 123px;
+	background-color: #1b5fc1;
+	border-radius: 8px;
 	color: #fff;
 	font-family: "Rubik", sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	text-align: center;
-	line-height: 14px;
+	line-height: 47px;
 	text-decoration: none;
 	transition: all 0.3s;
 }
@@ -117,15 +116,15 @@ h6 {
 .header__button:hover {
 	color: #1b5fc1;
 	border: 2px solid #1b5fc1;
-	background-color: #67b7e1;
+	background-color: transparent;
 }
 
 .header__link,
 .header__link-home {
-	color: #575c74;
-	font-size: 16px;
-
-	margin-right: 45px;
+	color: #07bd43;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 45px;
 	text-decoration: none;
 	position: relative;
 }
@@ -167,15 +166,50 @@ h6 {
 	z-index: 2;
 	transition: width 0.2s linear;
 }
+/*===============================  МЕНЮ И БУРГУР КОНЕЦ ==========================================*/
+
+
+
+/*===============================  КОРОВКИ И СОФТ ==========================================*/
+
+.content img {
+	max-width: 100%;
+}
+.content img {
+	max-width: 100%;
+}
+
+/*===============================  КОРОВКИ И СОФТ КОНЕЦ ==========================================*/
+
+
+
+
+
+
+
+
+
+
+/*===============================  ОПИСАНИЕ И БЛОКИ ==========================================*/
+
+
+
+.container1 {
+	width: 100%;
+	max-width: 90%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 
 .hero {
 	padding-top: 146px;
-	margin-bottom: 200px;
+padding-bottom: 140px;
+	background-color: #e4e4e4;
 }
 
 .hero__body {
 	display: flex;
-	align-items: center;
+	align-items: center;    
 }
 
 .hero__mine {
@@ -186,12 +220,12 @@ h6 {
 .hero__img {
 	flex: 0 1 50%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-end
 }
 
 .hero__img img {
 	display: block;
-	border-radius: 16px 16px 16px 0px;
+	border-radius: 0px 35px 35px 0px;
 	max-width: 100%;
 }
 
@@ -201,75 +235,211 @@ h6 {
 }
 
 .hero__mine-yellow {
-	color: #ffb800;
-	font-family: "Rubik", sans-serif;
+	color: #FFB800;
+	font-family: 'Rubik', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 }
 
 .hero__mine-title {
-	color: #0c122d;
-	font-family: "Rubik", sans-serif;
+	color: #0d9b3c;
+	font-family: 'Rubik', sans-serif;
 	font-size: 72px;
 	font-weight: 700;
 	line-height: 82px;
+	padding-bottom: 50px;
 }
 
 .hero__mine-text {
-	color: #575c74;
+	color: #575C74;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+	margin-right: 50px;
 }
 
 .button-shop {
-	display: inline-block;
+	display: inline-block;    
 	width: 115px;
-	background-color: #1b5fc1;
+	background-color: #1B5FC1;
 	border-radius: 8px;
 	color: #fff;
-	font-family: "Rubik", sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	text-align: center;
 	line-height: 46px;
 	text-decoration: none;
-	transition: all 0.3s;
+	transition: all .3s;
 	box-shadow: 0px 10px 15px 0px rgba(27, 95, 193, 0.19);
 }
 
 .button-shop:hover {
-	color: #1b5fc1;
-	border: 2px solid #1b5fc1;
+	color: #1B5FC1;
+	border: 2px solid #1B5FC1;
 	background-color: transparent;
-	box-shadow: none;
+	box-shadow: none;    
 }
 
 .button-more {
-	display: inline-block;
+	display: inline-block;    
 	width: 115px;
 	background-color: #fff;
 	border-radius: 8px;
-	color: #ffb800;
-	font-family: "Rubik", sans-serif;
+	color: #07bd43;
+	font-family: 'Rubik', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	text-align: center;
 	line-height: 46px;
 	text-decoration: none;
-	transition: all 0.3s;
-	border: 2px solid #ffb800;
+	transition: all .3s;
+	border: 2px solid #07bd43;
 	border-radius: 8px;
-	margin-left: 20px;
+	margin-left: 20px;   
 }
 
 .button-more:hover {
 	color: #fff;
-	background-color: #ffb800;
+	background-color: #07bd43;    
 }
-.footer {
-	margin-top: 200px;
+
+.logo__s {
+	flex: 0 1 50%;
+display: flex;
+justify-content: center
 }
+
+
+
+/*===============================  ОПИСАНИЕ И БЛОКИ КОНЕЦ ==========================================*/
+
+
+
+/*===============================  3 КОЛОННЫ НАЧАЛО ==========================================*/
+
+.column__3 {
+	display: flex;
+	background-color: #b4b4b4;
+	width: 90%;
+	padding-bottom: 100px;
+	margin: 0 auto;
+}
+
+.item {
+	flex: 0 1 33.33%;
+	margin-top: 50px;
+
+
+}
+
+.logo__s {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+}
+
+
+.title__s {
+	color: #0d9b3c;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 35px;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.text__s {
+	color: #010c05;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 35px;
+	width: 100%;
+	padding: 30px;
+	margin: 0;
+	text-align: center;
+}
+
+
+
+
+
+/*===============================  3 КОЛОННЫ КОНЕЦ ==========================================*/
+
+
+
+
+/*===============================  КАРТА НАЧАЛО ==========================================*/
+
+
+
+
+.item1 {
+	margin-top: 50px;
+}
+
+
+.logo__s1 img {
+	width: 100%;
+
+}
+
+
+.title__s1 {
+	color: #0d9b3c;
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 35px;
+	width: 100%;
+	padding: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.text__s1 {
+	color: #010c05;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 35px;
+	width: 100%;
+	padding: 30px;
+	margin: 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/*===============================  КАРТА КОНЕЦ ==========================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================  МЕДИА НАЧАЛО ==========================================*/
 
 @media (max-width: 900px) {
 	.header__link,
@@ -277,6 +447,8 @@ h6 {
 	.header__button {
 		margin-left: 40px;
 	}
+
+
 }
 
 @media (max-width: 870px) {
@@ -285,11 +457,11 @@ h6 {
 	.header__button {
 		margin-left: 30px;
 	}
-	.hero__img {
-		flex: 0 1 40%;
+	.column__3 {
+		flex-wrap: wrap;
 	}
-	.hero__mine {
-		flex: 1 0 60%;
+	.item {
+		flex: 0 1 100% ;
 	}
 }
 
@@ -313,9 +485,6 @@ h6 {
 	.header.fixed {
 		padding-top: 0;
 		padding-bottom: 0;
-	}
-	.hero {
-		padding-top: 76px;
 	}
 	.header__burger {
 		display: block;
@@ -390,70 +559,10 @@ h6 {
 	.header__link {
 		color: #0c122d;
 	}
-	.hero__mine-title {
-		font-size: 62px;
-		line-height: 70px;
-	}
-}
-@media (max-width: 670px) {
-	.hero__mine-title {
-		font-size: 42px;
-		line-height: 50px;
-	}
-
-	.hero__img {
-		flex: 0 0 100%;
-		transform: translate(-90%, 0px);
-	}
-	.hero__mine {
-		flex: 0 0 100%;
-	}
-	.hero__mine-text {
-		width: 340px;
-	}
 }
 
-@media (max-width: 590px) {
-	.hero__mine-text {
-		width: 300px;
-	}
-}
 @media (max-width: 540px) {
 	.container {
 		overflow: hidden;
-	}
-	.hero__img {
-		flex: 0 0 50%;
-		transform: translate(-70%, 0px);
-	}
-	.hero__mine {
-		flex: 0 0 100%;
-	}
-
-	.hero__mine-title {
-		font-size: 35px;
-		line-height: 40px;
-	}
-	.hero__mine-text {
-		width: 250px;
-	}
-}
-@media (max-width: 450px) {
-	.hero__img {
-		flex: 0 0 50%;
-		transform: translate(-50%, 0px);
-	}
-	.hero__mine-text {
-		width: 200px;
-	}
-}
-
-@media (max-width: 400px) {
-	.hero__img {
-		flex: 0 0 50%;
-		transform: translate(-40%, 0px);
-	}
-	.hero__mine-text {
-		width: 190px;
 	}
 }
